@@ -1,0 +1,70 @@
+﻿@model Ahram_Clinic.Models.Doctors
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Clinic_Layout.cshtml";
+}
+
+<h1>Edit</h1>
+
+<h4>Doctors</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="ID" class="control-label"></label>
+                <input asp-for="ID" readonly class="form-control" />
+                <span asp-validation-for="ID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Doc_Name" class="control-label"></label>
+                <input asp-for="Doc_Name" class="form-control" />
+                <span asp-validation-for="Doc_Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Doc_Email" class="control-label"></label>
+                <input asp-for="Doc_Email" class="form-control" />
+                <span asp-validation-for="Doc_Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Doc_Password" class="control-label"></label>
+                <input asp-for="Doc_Password" class="form-control" />
+                <span asp-validation-for="Doc_Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Doc_UserName" class="control-label"></label>
+                <input asp-for="Doc_UserName" class="form-control" />
+                <span asp-validation-for="Doc_UserName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Doc_Address" class="control-label"></label>
+                <input asp-for="Doc_Address" class="form-control" />
+                <span asp-validation-for="Doc_Address" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Doc_Phone" class="control-label"></label>
+                <input asp-for="Doc_Phone" class="form-control" />
+                <span asp-validation-for="Doc_Phone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Doc_Certificates" class="control-label"></label>
+                <input asp-for="Doc_Certificates" class="form-control" />
+                <span asp-validation-for="Doc_Certificates" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Specialization" class="control-label"></label>
+                <input asp-for="Specialization" class="form-control" />
+                <span asp-validation-for="Specialization" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-info" />
+                <a asp-action="Index" class="btn btn-outline-info">Back to List</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
